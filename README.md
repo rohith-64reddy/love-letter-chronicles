@@ -1,69 +1,51 @@
-# Welcome to your Lovable project
 
-## Project info
+# Love Journey - Proposal Website
 
-**URL**: https://lovable.dev/projects/b90c6473-abba-499d-823b-ee506f683152
+This is a romantic proposal website that tells your love story and leads to a proposal.
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b90c6473-abba-499d-823b-ee506f683152) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## How to run locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deploying to GitHub Pages
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Fork this repository or push it to your GitHub account
+2. Set up GitHub Pages:
+   - Go to your repository on GitHub
+   - Click on "Settings"
+   - Scroll down to "GitHub Pages" section
+   - Select "GitHub Actions" as the source
+   - The site will be deployed automatically when you push to the main branch
 
-**Use GitHub Codespaces**
+3. Important: Before deployment, download the images from Unsplash and place them in the `public/images` directory:
+   - `unsplash-1488590528505-98d2b5aba04b.jpg`
+   - `unsplash-1649972904349-6e44c42644a7.jpg`
+   - `unsplash-1581091226825-a6a2a5aee158.jpg`
+   - `unsplash-1721322800607-8c38375eef04.jpg`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customizing
 
-## What technologies are used for this project?
+To personalize this website:
+1. Edit the text content in the `JourneyPage.tsx` file
+2. Replace the photos with your own by updating the `photoUrl` values
+3. Change the name in the `Letter.tsx` component
+4. Customize colors and styling in the CSS files
 
-This project is built with .
+## Technologies Used
 
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b90c6473-abba-499d-823b-ee506f683152) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- shadcn/ui components
