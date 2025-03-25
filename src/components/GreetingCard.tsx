@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface PageContent {
   title: string;
@@ -48,6 +49,9 @@ const GreetingCard: React.FC<GreetingCardProps> = ({ pages }) => {
       : 'opacity-0 translate-x-10'
     : 'opacity-100 translate-x-0';
 
+  // Split text into paragraphs
+  const paragraphs = pages[currentPage]?.text.split('\n\n') || [];
+
   return (
     <div className="journey-card max-w-4xl mx-auto p-4 md:p-6">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-center mb-8 animate-fade-in">
@@ -74,9 +78,16 @@ const GreetingCard: React.FC<GreetingCardProps> = ({ pages }) => {
               <h3 className="text-xl md:text-2xl font-serif text-primary">
                 {pages[currentPage]?.title}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {pages[currentPage]?.text}
-              </p>
+              
+              <ScrollArea className="h-[300px] md:h-[350px] lg:h-[400px] pr-4">
+                <div className="space-y-4">
+                  {paragraphs.map((paragraph, idx) => (
+                    <p key={idx} className="text-gray-700 leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </ScrollArea>
             </div>
           </div>
         </div>
