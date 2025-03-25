@@ -16,8 +16,8 @@ As we've grown together, I've become more certain of one thing: I want to spend 
 
 I invite you to continue to the next page, where I've collected some of our most precious memories - a journey that has led me to this moment.`;
 
-  // Replace these with actual photo URLs
-  const photo1Url = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format";
+  // Using the uploaded image and another placeholder
+  const photo1Url = "/lovable-uploads/0e1c35b8-8a3d-4aac-8213-fc2760ef8d55.png";
   const photo2Url = "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&auto=format";
 
   return (
